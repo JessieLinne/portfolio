@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-:root {
+:root { /*útil para declarar uma variável CSS global*/
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #22D4FD;
@@ -9,13 +9,14 @@
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
-*{
+
+*{ /*Reset CSS - remove as margens e os preenchimentos padrão de todos os elementos HTML*/
     margin: 0;
     padding: 0;
 }
 
 body{
-    box-sizing: border-box;
+    box-sizing: border-box; /*Isso facilita o controle do tamanho total do elemento. A largura e altura incluem o conteúdo, o padding e a borda.*/
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
@@ -23,27 +24,27 @@ body{
     padding: 2% 0% 0% 15%;
 }
 .cabecalho__menu{
-    display: flex;
-    gap: 80px;
+    display: flex; /*Define um flex container; inline ou block dependendo do valor dado. Ele habilita um flex context para todos os seus filhos diretos.*/
+    gap: 80px; /*Aplica espaçamento somente entre itens flex, não nas bordas externas.*/
 }
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.5rem; /*REM é a unidade de medida em relação ao tamanho da fonte da raiz do elemento. Divida o valor desejado pelo tamanho da fonte do elemento raiz (padrão 16px)*/
+    font-weight: 600; /*Peso da fonte*/
     color: var(--cor-terciaria);
-    text-decoration: none;
+    text-decoration: none; /*Adiciona, ou não, mais decoração de texto (sublinhado, tachado...)*/
 }
 .apresentacao{
     padding: 5% 15%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; /*Alinha todos os itens dentro de um flex-box ao longo do eixo transversal (geralmente o eixo vertical).*/
+    justify-content: space-between; /*Alinha e distribui os itens dentro de um flex-box ao longo do eixo principal (geralmente o eixo horizontal).*/
     gap: 82px;
 }
 .apresentacao__conteudo{
-    width: 50%;
+    width: 50%; /*% é a unidade de medida em relação ao tamanho do elemento pai*/
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Define a direção em que os itens são colocados no contêiner flex, em linhas horizontais ou colunas verticais.*/
     gap: 40px;
 }
 
@@ -77,8 +78,8 @@ body{
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
     width: 50%;
-    text-align: center;
-    border-radius: 8px;
+    text-align: center; /*Define o alinhamento horizontal do texto em um elemento.*/
+    border-radius: 8px; /*Define o raio dos cantos do elemento, podendo ter de um a quatro valores.*/
     font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
