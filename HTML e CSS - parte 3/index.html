@@ -3,33 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css"> <!--The <link> tag defines the relationship between the current document and an external resource./Most often used to link to external style sheets or to add a favicon-->
+    <!--For <link> element, the href attribute specifies the location (URL) of the external resource (most often a style sheet file).-->
 </head>
 
 <body>
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
+        <nav class="cabecalho__menu"> <!--The <nav> tag defines a set of navigation links.-->
+            <a class="cabecalho__menu__link" href="index.html">Home</a> <!--The <a> tag defines a hyperlink, which is used to link from one page to another.-->
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
+    <main class="apresentacao"> <!--The <main> tag specifies the main content of a document. The content inside the <main> element should be unique to the document. There must not be more than one <main> element in a document.-->
+        <section class="apresentacao__conteudo"> <!--The <section> tag defines a section in a document.-->
             <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong 
-            class="titulo-destaque">com um Front-end de qualidade!
-            </strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Joana Santos, desenvolvedora
-            Front-end com especialidade em React, HTML e
-            CSS. Ajudo pequenos negócios e designers a
-            colocarem em prática boas ideias. Vamos
-            conversar?</p>
-            <div class="apresentacao__links">
+            class="titulo-destaque">com um Front-end de qualidade!</strong></h1> <!--The <strong> tag is used to define text with strong importance. The content inside is typically displayed in bold.-->
+            <p class="apresentacao__conteudo__texto">Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos?</p>
+            <div class="apresentacao__links"> <!--The <div> tag defines a division or a section in an HTML document.Any sort of content can be put inside the <div> tag!-->
                 <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
                 <a class="apresentacao__links__navegacao" href="https://github.com/rafaballerini">
-                    <img src="./assets/github.png">
+                    <img src="./assets/github.png"> <!--For <a> element, the href attribute specifies the URL of the page the link goes to.-->
                     Github
                 </a>
                 <a class="apresentacao__links__navegacao" href="https://linkedin.com/in/rafaellaballerini">
@@ -42,7 +38,7 @@
                 </a>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="./assets/imagem.png" alt="Foto da Joana Santos programando">
+        <img class="apresentacao__imagem" src="./assets/imagem.png" alt="Foto da Joana Santos programando"> <!--The <img> tag is used to embed an image in an HTML page. And has two required attributes: src - Specifies the path to the image, and alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed-->
     </main>
     <footer class="rodape">
         <p>Desenvolvido por Alura.</p>
